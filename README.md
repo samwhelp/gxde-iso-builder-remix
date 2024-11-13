@@ -14,6 +14,25 @@
 
 
 
+## Subject
+
+* [Usage](#usage)
+* [Link](#link)
+
+
+
+
+## Usage
+
+run to build iso
+
+``` sh
+make iso-build
+```
+
+
+
+
 ## Link
 
 * [gxde-iso-builder](https://github.com/GXDE-OS/gxde-iso-builder)
