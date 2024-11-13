@@ -2,6 +2,8 @@
 
 > Still in development
 
+> [README.original.md](README.original.md)
+
 
 # gxde-iso-builder-remix
 
