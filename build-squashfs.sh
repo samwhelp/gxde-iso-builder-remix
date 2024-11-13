@@ -1,12 +1,12 @@
 #!/bin/bash
-function installWithAptss() {
+function installWithAptss () {
 	if [[ $isUnAptss == 1 ]]; then
 		chrootCommand apt "$@"
 	else
 		chrootCommand aptss "$@"
 	fi
 }
-function chrootCommand() {
+function chrootCommand () {
 	for i in {1..5};
 	do
 		sudo env DEBIAN_FRONTEND=noninteractive chroot $debianRootfsPath "$@"
@@ -16,7 +16,7 @@ function chrootCommand() {
 		sleep 1
 	done
 }
-function UNMount() {
+function UNMount () {
 	sudo umount "$1/sys/firmware/efi/efivars"
 	sudo umount "$1/sys"
 	sudo umount "$1/dev/pts"
@@ -33,6 +33,9 @@ function UNMount() {
 	sudo umount "$1/media"
 	sudo umount "$1/proc"
 	sudo umount "$1/tmp"
+}
+function gxos_sys_overlay () {
+	sudo cp -rf ./asset/overlay/. $debianRootfsPath
 }
 programPath=$(cd $(dirname $0); pwd)
 debianRootfsPath=debian-rootfs
@@ -150,6 +153,8 @@ fi
 installWithAptss install firmware-linux -y
 installWithAptss install firmware-iwlwifi firmware-realtek -y
 installWithAptss install grub-common -y
+## Overlay
+gxos_sys_overlay
 # 清空临时文件
 installWithAptss autopurge -y
 installWithAptss clean
