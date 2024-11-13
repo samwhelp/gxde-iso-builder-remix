@@ -17,3 +17,4 @@
 ## Link
 
 * [gxde-iso-builder](https://github.com/GXDE-OS/gxde-iso-builder)
+* [gxde-adjustment](https://github.com/samwhelp/gxde-adjustment) / gxde-config / [Deepin-Light](https://github.com/samwhelp/gxde-adjustment/tree/main/prototype/main/gxde-config/locale/en_us/Deepin-Light)
