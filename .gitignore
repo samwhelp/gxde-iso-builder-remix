@@ -1,2 +1,5 @@
 gxde.iso
 debian-rootfs/
+grub-deb/
+iso-template/amd64/deb/
+iso-template/amd64/live/
