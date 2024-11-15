@@ -109,7 +109,7 @@ fi
 sudo rm -rf $debianRootfsPath/var/lib/dpkg/info/plymouth-theme-gxde-logo.postinst
 installWithAptss install live-task-recommended live-task-standard live-config-systemd \
     live-boot -y
-installWithAptss install fcitx5-pinyin libudisks2-qt5-0 fcitx5 -y
+installWithAptss install im-config fcitx5 fcitx5-pinyin fcitx5-chewing libudisks2-qt5-0 -y
 # 
 if [[ $1 != "i386" ]]; then
     chrootCommand apt install spark-store -y
