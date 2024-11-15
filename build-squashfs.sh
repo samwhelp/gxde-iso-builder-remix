@@ -34,8 +34,11 @@ function UNMount() {
     sudo umount "$1/proc"
     sudo umount "$1/tmp"
 }
-function gxos_sys_overlay () {
+function gxde_os_overlay () {
     sudo cp -rf ./asset/overlay/. $debianRootfsPath
+}
+function gxde_chroot_compile_schemas () {
+    chrootCommand glib-compile-schemas /usr/share/glib-2.0/schemas
 }
 programPath=$(cd $(dirname $0); pwd)
 debianRootfsPath=debian-rootfs
@@ -158,7 +161,9 @@ installWithAptss install firmware-linux -y
 installWithAptss install firmware-iwlwifi firmware-realtek -y
 installWithAptss install grub-common -y
 ## Overlay
-gxos_sys_overlay
+gxde_os_overlay
+## Compile Schemas
+gxde_chroot_compile_schemas
 # 清空临时文件
 installWithAptss autopurge -y
 installWithAptss clean
