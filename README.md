@@ -44,11 +44,18 @@ cd gxde-iso-builder-remix
 
 ## Usage
 
-run to build iso
+> [Makefile](Makefile)
+
+
+
+
+> build: arch=amd64
 
 ``` sh
 make iso-build
 ```
+
+> ./iso-template/gxde.iso
 
 
 
