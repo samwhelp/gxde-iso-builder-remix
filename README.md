@@ -44,7 +44,7 @@ cd gxde-iso-builder-remix
 
 ## Usage
 
-> [Makefile](Makefile)
+> [Makefile](https://github.com/samwhelp/gxde-iso-builder-remix/blob/main/Makefile)
 
 
 
