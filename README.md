@@ -17,9 +17,27 @@
 
 ## Subject
 
+* [Clone](#clone)
 * [Usage](#usage)
 * [Config File](#config-file)
 * [Link](#link)
+
+
+
+
+## Clone
+
+> clone
+
+``` sh
+git clone https://github.com/samwhelp/gxde-iso-builder-remix.git
+```
+
+> cd work dir
+
+``` sh
+cd gxde-iso-builder-remix
+```
 
 
 
