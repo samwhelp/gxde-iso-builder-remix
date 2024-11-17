@@ -15,6 +15,7 @@
 ## Subject
 
 * [Usage](#usage)
+* [Config File](#config-file)
 * [Link](#link)
 
 
@@ -27,6 +28,24 @@ run to build iso
 ``` sh
 make iso-build
 ```
+
+
+
+
+## Config File
+
+> Build Target OS / Config File
+
+| Kwin |
+| --------------------- |
+| [~/.config/deepin-kwinrc](./asset/overlay/etc/skel/.config/deepin-kwinrc) |
+
+
+| Keybind |
+| --------------------- |
+| [~/.config/kglobalshortcutsrc](./asset/overlay/etc/skel/.config/deepin-kwinrc) |
+| [~/.config/deepin/dde-daemon/keybinding/custom.ini](./asset/overlay/etc/skel/.config/deepin/dde-daemon/keybinding/custom.ini) |
+| [/usr/share/glib-2.0/schemas/95_gxde-adjustment-keybind.gschema.override](./asset/overlay/usr/share/glib-2.0/schemas/95_gxde-adjustment-keybind.gschema.override) |
 
 
 
