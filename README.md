@@ -1,7 +1,5 @@
 
 
-> Still in development
-
 > [README.original.md](README.original.md)
 
 
