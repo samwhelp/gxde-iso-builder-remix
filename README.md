@@ -50,8 +50,6 @@ run to build iso
 make iso-build
 ```
 
-> /opt/tmp/gxde/work/iso-template/gxde.iso
-
 
 
 
