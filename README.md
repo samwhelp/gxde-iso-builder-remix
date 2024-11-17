@@ -39,9 +39,9 @@ make iso-build
 
 > Build Target OS / Config File
 
-| Kwin |
+| Mousebind |
 | --------------------- |
-| [~/.config/deepin-kwinrc](./asset/overlay/etc/skel/.config/deepin-kwinrc) |
+| [~/.config/deepin-kwinrc](./asset/overlay/etc/skel/.config/deepin-kwinrc#L50-L56) |
 
 
 | Keybind |
