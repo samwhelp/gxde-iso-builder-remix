@@ -55,7 +55,7 @@ cd gxde-iso-builder-remix
 make iso-build
 ```
 
-> ./iso-template/gxde.iso
+> ./gxde.iso
 
 
 
